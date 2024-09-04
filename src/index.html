@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <!-- link icon google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        font-size: 14px;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .iconNav {
+        font-size: 2.5rem;
+      }
+      .aside-list {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body class="relative">
+    <div class="fixed top-0 left-0 w-full h-screen backdrop-brightness-50 z-10">
+      <div class="w-3/4 h-screen bg-white shadow">
+        <div class="w-full h-28 pl-6 pt-16 bg-sky-600">
+          <h1 class="text-4xl font-extrabold text-white">To-Do Pro</h1>
+        </div>
+        <ul class="h-5/6 overflow-y-scroll px-2 pt-2 text-gray-700">
+          <li class="flex p-3 justify-start items-center gap-6"><span class="material-symbols-outlined text-yellow-300 aside-list"> card_membership </span>Menjadi Pro</li>
+          <li class="flex p-3 justify-start items-center gap-6"><span class="material-symbols-outlined text-sky-600 aside-list"> star </span>Bintang Tugas</li>
+          <li class="p-3 border-b">
+            <details class="">
+              <summary class="list-none flex justify-start items-center gap-6">
+                <span class="material-symbols-outlined text-sky-600 aside-list"> category </span>
+                <span class="pr-20">Kategori</span>
+                <span class="material-symbols-outlined justify-self-end"> arrow_drop_down </span>
+              </summary>
+              <ul class="pt-4">
+                <li class="flex justify-between items-center pl-5 py-2">
+                  <div class="flex items-center gap-6"><span class="material-symbols-outlined text-gray-300"> description </span>Semua</div>
+                  <span>0</span>
+                </li>
+                <li class="flex justify-between items-center pl-5 py-2">
+                  <div class="flex items-center gap-6"><span class="material-symbols-outlined text-gray-300"> description </span>Kerja</div>
+                  <span>0</span>
+                </li>
+                <li class="flex justify-between items-center pl-5 py-2">
+                  <div class="flex items-center gap-6"><span class="material-symbols-outlined text-gray-300"> description </span>Pribadi</div>
+                  <span>0</span>
+                </li>
+                <li class="flex justify-between items-center pl-5 py-2">
+                  <div class="flex items-center gap-6"><span class="material-symbols-outlined text-gray-300"> description </span>Wishlist</div>
+                  <span>0</span>
+                </li>
+                <li class="flex justify-between items-center pl-5 py-2">
+                  <div class="flex items-center gap-6"><span class="material-symbols-outlined text-gray-300"> description </span>Hari Ulang Tahun</div>
+                  <span>0</span>
+                </li>
+                <li class="flex justify-between items-center pl-5 pt-3">
+                  <div class="flex items-center gap-6"><span class="material-symbols-outlined text-blue-500"> add </span>buat baru</div>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="flex p-3 justify-start items-center gap-6"><span class="material-symbols-outlined text-sky-600 aside-list"> format_paint </span>Tema</li>
+          <li class="flex p-3 justify-start items-center gap-6"><span class="material-symbols-outlined text-sky-600 aside-list"> widgets </span>Widget</li>
+          <li class="flex p-3 justify-start items-center gap-6"><span class="material-symbols-outlined text-sky-600 aside-list"> volunteer_activism </span>Sumbang</li>
+          <li class="flex p-3 justify-start items-center gap-6"><span class="material-symbols-outlined text-sky-600 aside-list"> family_home </span>Aplikasi Keluarga</li>
+          <li class="flex p-3 justify-start items-center gap-6"><span class="material-symbols-outlined text-sky-600 aside-list"> rate_review </span>Keritik saran</li>
+          <li class="flex p-3 justify-start items-center gap-6"><span class="material-symbols-outlined text-sky-600 aside-list"> help </span>Tanya Jawab</li>
+          <li class="flex p-3 justify-start items-center gap-6"><span class="material-symbols-outlined text-sky-600 aside-list"> settings </span>Pengaturan</li>
+        </ul>
+      </div>
+    </div>
+    <nav class="fixed bottom-0 left-0 pl-4 pr-7 py-3 shadow-[10px_0_15px_-3px_rgba(0,0,0,0.3)] flex justify-between items-center w-full">
+      <a href="#" class="flex flex-col justify-center items-center"><span class="material-symbols-outlined iconNav text-gray-400"> menu </span></a>
+      <a href="#" class="flex flex-col justify-center items-center text-xs text-blue-600"><span class="material-symbols-outlined iconNav"> task </span>tugas</a>
+      <a href="#" class="flex flex-col justify-center items-center text-xs text-gray-400"><span class="material-symbols-outlined iconNav"> calendar_month </span>kalender</a>
+      <a href="#" class="flex flex-col justify-center items-center text-xs text-gray-400"><span class="material-symbols-outlined iconNav"> person </span>Miliku</a>
+    </nav>
+  </body>
+</html>
