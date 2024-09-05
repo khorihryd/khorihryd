@@ -22,14 +22,62 @@
       .iconNav {
         font-size: 2.5rem;
       }
+      .iconMoreNavKat {
+        font-size: 2rem;
+        padding: 1rem;
+        font-weight: bold;
+      }
       .aside-list {
         font-size: 2rem;
+      }
+      .ping {
+        animation: ping 3s ease-out infinite;
+      }
+      @keyframes ping {
+        75%,
+        100% {
+          transform: scale(1.7);
+          opacity: 0;
+        }
       }
     </style>
   </head>
   <body class="relative">
-    <div class="fixed top-0 left-0 w-full h-screen backdrop-brightness-50 z-10">
-      <div class="w-3/4 h-screen bg-white shadow">
+    <!--menu tugas start -->
+    <div class="bg-gray-100 h-screen">
+      <div class="nav-kategori flex justify-between items-center flex-nowrap bg-white">
+        <ul class="h-10 px-4 flex justify-between items-center flex-nowrap overflow-scroll gap-3">
+          <li class="px-4 py-2 bg-blue-100 rounded-3xl text-gray-600 w-max shrink-0">Semua</li>
+          <li class="px-4 py-2 bg-blue-100 rounded-3xl text-gray-600 w-max shrink-0">Kerja</li>
+          <li class="px-4 py-2 bg-blue-100 rounded-3xl text-gray-600 w-max shrink-0">Pribadi</li>
+          <li class="px-4 py-2 bg-blue-100 rounded-3xl text-gray-600 w-max shrink-0">Wishlist</li>
+          <li class="px-4 py-2 bg-blue-100 rounded-3xl text-gray-600 w-max shrink-0">Hari ulang tahun</li>
+        </ul>
+        <div>
+          <details class="relative w-14 shrink-0">
+            <summary class="list-none flex justify-center items-center">
+              <span class="material-symbols-outlined iconMoreNavKat text-gray-400"> more_vert </span>
+            </summary>
+            <div class="fixed top-14 right-8 w-max py-2 rounded-2xl shadow bg-white text-gray-600">
+              <li class="px-5 py-3 list-none">Kelola Kategori</li>
+              <li class="px-5 py-3 list-none">Telusuri</li>
+              <li class="px-5 py-3 list-none">Sortir Tugas</li>
+              <li class="px-5 py-3 list-none">Mencetak</li>
+              <li class="px-5 py-3 list-none">Menjadi PRO</li>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+    <!--menu tugas ends -->
+    <!-- tombol add start -->
+    <div class="fixed bottom-24 right-6 bg-blue-600 rounded-full w-16 h-16 ping"></div>
+    <button class="fixed bottom-24 right-6 bg-blue-600 rounded-full w-16 h-16 text-5xl text-white">+</button>
+
+    <!-- tombol add Ends -->
+    <!-- side menu start -->
+    <div id="sidemenu" class="sidemenu fixed top-0 right-full w-full transition-all duration-200 h-screen z-10">
+      <div class="slideMenu w-3/4 h-screen bg-white shadow z-50">
         <div class="w-full h-28 pl-6 pt-16 bg-sky-600">
           <h1 class="text-4xl font-extrabold text-white">To-Do Pro</h1>
         </div>
@@ -80,11 +128,15 @@
         </ul>
       </div>
     </div>
-    <nav class="fixed bottom-0 left-0 pl-4 pr-7 py-3 shadow-[10px_0_15px_-3px_rgba(0,0,0,0.3)] flex justify-between items-center w-full">
-      <a href="#" class="flex flex-col justify-center items-center"><span class="material-symbols-outlined iconNav text-gray-400"> menu </span></a>
+    <!-- side menu end -->
+    <!-- navigasi bawah start -->
+    <nav class="fixed bottom-0 left-0 pl-4 pr-7 py-3 shadow-[10px_0_15px_-3px_rgba(0,0,0,0.3)] flex justify-between items-center w-full bg-white">
+      <button id="btnMenu" class="flex flex-col justify-center items-center"><span class="material-symbols-outlined iconNav text-gray-400"> menu </span></button>
       <a href="#" class="flex flex-col justify-center items-center text-xs text-blue-600"><span class="material-symbols-outlined iconNav"> task </span>tugas</a>
       <a href="#" class="flex flex-col justify-center items-center text-xs text-gray-400"><span class="material-symbols-outlined iconNav"> calendar_month </span>kalender</a>
       <a href="#" class="flex flex-col justify-center items-center text-xs text-gray-400"><span class="material-symbols-outlined iconNav"> person </span>Miliku</a>
     </nav>
+    <!-- Navigasi Bawah End -->
+    <script src="script.js"></script>
   </body>
 </html>
